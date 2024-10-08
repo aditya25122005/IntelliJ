@@ -12,7 +12,7 @@ public class target_sum {
         Arrays.sort(arr);
         int target=sc.nextInt();
         for(int i=0;i<N-2;i++){
-            if(i>0 && arr[i]==arr[i+1]){
+            if(i>0 && arr[i]==arr[i-1]){
                 continue;
             }
             int left=i+1;
