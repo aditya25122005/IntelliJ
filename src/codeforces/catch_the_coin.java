@@ -15,4 +15,17 @@ public class catch_the_coin {
             }
         }
     }
+
+    public static class rook {
+        public static void main(String[] args) {
+            Scanner sc= new Scanner(System.in);
+            int t=sc.nextInt();
+            for(int i=1;i<=t;i++){
+                String s=sc.nextLine();
+                int A=(int)s.charAt(0);
+                System.out.println(A);
+
+            }
+        }
+    }
 }
