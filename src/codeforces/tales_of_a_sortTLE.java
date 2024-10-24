@@ -9,32 +9,17 @@ public class tales_of_a_sortTLE {
             int [] arr=new int[N];
             for(int i=0;i<N;i++){
                 arr[i]=sc.nextInt();
-            }
-            int count=0;
-            if(isSorted(arr)){
-                System.out.println(0);
-            }
-            else {
-                while (isSorted(arr)==false) {
-                    for (int i = 0; i < arr.length; i++) {
-                        arr[i] = Math.max(0, arr[i] - 1);
 
-                    }
-                    count++;
+            }
+
+            int c=0;
+            for(int i=1;i<N;i++){
+                if(arr[i]<arr[i-1]){
+                    c=Math.max(c,arr[i-1]);
                 }
-                System.out.println(count);
             }
-
-
+            System.out.println(c);
         }
-
-    }
-    public static boolean isSorted(int [] arr){
-        for(int i=0;i<arr.length-1;i++){
-            if(arr[i]>arr[i+1]){
-                return false;
-            }
-        }
-        return true;
     }
 }
+// 3 1 5 6 8

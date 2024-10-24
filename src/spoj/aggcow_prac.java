@@ -17,8 +17,6 @@ public class aggcow_prac {
             System.out.println(maxMindistance(stall,C));
 
         }
-
-
     }
     public static int maxMindistance(int[] stall,int C){
         int lo=0;
