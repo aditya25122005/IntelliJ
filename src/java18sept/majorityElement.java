@@ -21,6 +21,6 @@ public class majorityElement {
             }
         }
         return e;
-
+                         // random
     }
 }
