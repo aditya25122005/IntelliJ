@@ -2,7 +2,7 @@ package practice;
 
 public class first_unique_char {
     public static void main(String[] args) {
-        String s="leetcode";
+        String s="teetcode";
         System.out.println(firstUniqChar(s));
 
     }
