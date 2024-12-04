@@ -1,5 +1,4 @@
 package string;
-
 public class substringp {
     public static void main(String[] args) {
         String s="ABCDE";
@@ -8,9 +7,7 @@ public class substringp {
         for(int i=1;i<=s.length();i++){
             ans+= i*l;
             l--;
-
         }
         System.out.println(ans);
-
     }
 }

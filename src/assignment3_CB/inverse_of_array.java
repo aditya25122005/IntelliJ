@@ -9,7 +9,6 @@ public class inverse_of_array {
         int [] inverse=new int[N];
         for(int i=0;i<N;i++){
             arr[i]=sc.nextInt();
-
         }
         for(int i=0;i<N;i++){
             inverse[arr[i]]=i;
