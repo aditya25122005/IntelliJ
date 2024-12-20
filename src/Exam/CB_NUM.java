@@ -18,7 +18,7 @@ public class CB_NUM {
                 String sub=s.substring(i,j);
                 if(isCBnum(sub) && isvisited(visited,i,j-1)==true){
                     count++;
-                    for(int k=i;k<j;k++){
+                    for(int k=i;k<=j-1;k++){
                         visited[k]=true;
                     }
                 }
