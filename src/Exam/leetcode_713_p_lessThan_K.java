@@ -9,11 +9,14 @@ public class leetcode_713_p_lessThan_K {
         int si=0;
         int ei=0;
         while(ei<nums.length){
+            //grow
             p*=nums[ei];
+            //shrink
             while(p>=k && si<=ei){
                 p=p/nums[si];
                 si++;
             }
+            //update
             ans+= ei-si+1;
             ei++;
         }

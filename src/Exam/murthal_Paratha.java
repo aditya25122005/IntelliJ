@@ -12,7 +12,7 @@ public class murthal_Paratha {
         int ans=0;
         Arrays.sort(R);
         int lo=1;
-        int hi=R[0] * P*(P-1);
+        int hi=R[0] * P*(P+1);
         while(lo<=hi){
             int mid=lo+(hi-lo)/2;
             int total=0;
