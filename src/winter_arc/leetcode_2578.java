@@ -1,5 +1,5 @@
 package winter_arc;
-
+import java.util.*;
 public class leetcode_2578 {
     public static void main(String[] args) {
         System.out.println(splitNum(4325));
