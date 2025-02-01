@@ -2,7 +2,7 @@ package backtracking;
 
 public class coin_combination {
     public static void main(String[] args) {
-        int [] coin={1,2,3,5};
+        int [] coin={1,2,3};
         int amount=5;
         combination(coin,amount,"",0);
     }

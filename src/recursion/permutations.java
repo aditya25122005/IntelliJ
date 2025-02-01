@@ -2,7 +2,7 @@ package recursion;
 
 public class permutations {
     public static void main(String[] args) {
-        String ques="abbc";
+        String ques="abc";
         print(ques,"");
     }
     public static void print(String ques,String ans){

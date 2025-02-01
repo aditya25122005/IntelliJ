@@ -1,5 +1,6 @@
 package arraylist;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.*;
 
@@ -31,6 +32,12 @@ public class arrayListDemo {
         Collections.sort(l1);
         System.out.println(l1);
 
-
+        int num=2315;
+        String s=String.valueOf(num);
+        char [] arr=s.toCharArray();
+        Arrays.sort(arr);
+        for(char ch:arr){
+            System.out.println(ch);
+        }
     }
 }

@@ -2,12 +2,12 @@ package recursion_practice;
 
 public class permutations {
     public static void main(String[] args) {
-        String s="abc";
+        String s="123";
         print(s,"");
     }
     public static void print(String s,String ans) {
         if(s.length()==0){
-            System.out.println(ans);;;;
+            System.out.println(ans);
             return;
         }
 
