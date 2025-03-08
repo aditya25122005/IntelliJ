@@ -1,5 +1,5 @@
 package winter_arc;
-
+import java.util.*;
 public class leetcode_1502 {
     public static void main(String[] args) {
         int [] arr={3,5,1};
