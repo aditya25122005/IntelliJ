@@ -2,7 +2,10 @@ package winter_arc;
 import java.util.*;
 public class leetcode_2155{
     public static void main(String[] args) {
-        int [] arr={1,1};
+        int [] arr={0,0,1,0};
+        System.out.println(maxScoreIndices(arr));
+    }
+    public static List<Integer> maxScoreIndices(int[] arr) {
         int n=arr.length;
         List<Integer> ll = new ArrayList<>();
         int [] left= new int [n+1];
@@ -23,24 +26,19 @@ public class leetcode_2155{
             }
             right[i]=one;
         }
-        int sum[] = new int[ n+1];
+        int max=0;
+
         for(int i=0;i<=n;i++){
-            sum[i]=right[i]+left[i];
-            right[i]=right[i]+left[i];
+            right[i]+=left[i];
+            max=Math.max(right[i],max);
         }
-        Arrays.sort(sum);
-        int max= sum[n];
+
+
         for(int i=0;i<=n;i++){
             if(right[i]==max){
                 ll.add(i);
             }
         }
-        System.out.println(ll);
-
-
-
-
-
-
+        return ll;
     }
 }
